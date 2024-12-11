@@ -1,0 +1,124 @@
+/* Загальні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0a23;
+    color: white;
+}
+
+/* Контейнер */
+.container {
+    text-align: left;
+    max-width: auto;
+    height: auto ;
+    width: auto;
+    padding: 30px;
+color: white;
+background-color: #131424;
+}
+
+/* Стиль глобуса */
+.globe {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(60,130,230,1) 0%, rgba(40,90,180,1) 100%);
+    margin: 0 auto 20px;
+    position: relative;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+    animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.globe::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    transform: translate(-50%, -50%);
+}
+
+/* Заголовок */
+h1 {
+    height: auto ;
+    width: auto;
+    font-size: 50px;
+    margin: 0;
+    letter-spacing: 8px;
+    color: #e0e0ff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Опис */
+.description {
+    height: auto ;
+    width: auto;
+    margin-bottom: 89px ;
+    color: #d0d0ff;
+    font-size: 30px;
+}
+
+/* Підтеми */
+.subtopic {
+    margin-top: 30px;
+}
+
+.subtopic h2 {
+    font-size: 35px;
+    color: #e0e0ff;
+    margin-bottom: 10px;
+}
+
+.subtopic p {
+    font-size: 35px;
+    color: #d0d0ff;
+    margin-bottom: 15px;
+}
+
+/* Меню */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 35px;
+    }
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 65px 80px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: #0a0a23;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+body{
+    border: 1px solid #999; /* Рамка для кожного з блоків */
+    margin: 10px 0;
+    padding: 10px;}
+    .description{
+    border: 1px solid #999   ; /* Рамка для кожного з блоків */
+    border-color:  #352d3b;
+    background-color: #352d3b;
+    margin: 0px ;
+    padding: 15px;}

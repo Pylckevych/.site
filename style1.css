@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2; /* Світло-сірий фон */
+  color: #000000; /* Чорний текст */
+  margin: 0;
+}
+
+header {
+  background-color: #d9d9d9; /* Сірий фон заголовка */
+  padding: 15px;
+  text-align: center;
+  color: #000000; /* Чорний текст заголовка */
+  border: 2px dashed #bfbfbf; /* Пунктирний контур заголовка */
+  background-image: repeating-linear-gradient(
+    45deg,
+    #d9d9d9,
+    #d9d9d9 10px,
+    #f2f2f2 10px,
+    #f2f2f2 20px
+  ); /* Діагональні смуги */
+}
+
+nav {
+  background-color: #d9d9d9; /* Сірий фон меню */
+  padding: 15px;
+  width: 20%;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  border-right: 2px dotted #bfbfbf; /* Точковий контур для меню */
+  background-image: repeating-linear-gradient(
+    90deg,
+    #d9d9d9,
+    #d9d9d9 15px,
+    #bfbfbf 15px,
+    #bfbfbf 30px
+  ); /* Вертикальні лінії */
+}
+
+nav a {
+  display: block;
+  color: #0066cc; /* Синій текст посилань */
+  padding: 10px;
+  text-decoration: none;
+  border-bottom: 1px dashed #0066cc; /* Пунктирна лінія під посиланнями */
+}
+
+nav a:hover {
+  background-color: #bfbfbf; /* Темно-сірий при наведенні */
+}
+
+main {
+  margin-left: 22%;
+  padding: 20px;
+  background-color: #ffffff; /* Білий фон основного вмісту */
+  border: 2px solid #bfbfbf; /* Контур основного вмісту */
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #ffffff,
+    #ffffff 10px,
+    #e6e6e6 10px,
+    #e6e6e6 20px
+  ); /* Зигзаги */
+}
+
+h1, h2, h3 {
+  color: #0066cc; /* Сині заголовки */
+  border-bottom: 1px solid #0066cc; /* Лінія під заголовками */
+  padding-bottom: 5px;
+}
+
+h2 {
+  background-image: radial-gradient(circle, #bfbfbf, transparent 5px); /* Радіальні крапки */
+}
+
+h3 {
+  background-image: linear-gradient(to right, #0066cc, #ffffff 50%, #0066cc); /* Лінія з білими прогалинами */
+}
